@@ -1,3 +1,24 @@
+#!/bin/bash
+
+# ~/.osx — http://mths.be/osx
+
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Menu bar: disable transparency
+defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+
+###############################################################################
+# Apps                                                                        #
+###############################################################################
+
 # Sublime terminal shortcut
 ln -s /Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
