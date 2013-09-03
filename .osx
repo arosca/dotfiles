@@ -20,7 +20,7 @@ defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
 ###############################################################################
 
 # Sublime terminal shortcut
-ln -s /Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl ~/bin/subl
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
 # Add iOS Simulator to Launchpad
 ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
