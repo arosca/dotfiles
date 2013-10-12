@@ -8,6 +8,9 @@ unset file
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
+# init rvm
+source ~/.rvm/scripts/rvm
+
 # init z   https://github.com/rupa/z
 . ~/bin/z/z.sh
 
