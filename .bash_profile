@@ -1,3 +1,6 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH"
+
 # Load dotfiles
 # ~/.extra can be used for settings you don’t want to commit
 for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
@@ -14,11 +17,11 @@ shopt -s histappend
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
-# init rvm
-source ~/.rvm/scripts/rvm
-
 # init z   https://github.com/rupa/z
 . ~/bin/z/z.sh
+
+# Add `killall` tab completion for common apps
+complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
 
 # Prefer US English and use UTF-8
 export LC_ALL="en_US.UTF-8"
