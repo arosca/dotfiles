@@ -21,8 +21,8 @@ alias ll="ls -la ${colorflag}"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-#python3
-alias python="python3"
+#git
+alias gs="git status"
 
 #weather
 alias weather="curl -4 http://wttr.in/bucharest"
